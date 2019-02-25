@@ -6,6 +6,16 @@ function AdminSheet(){
         onload: function(response) {
             var pcgameitadmin_str = response.responseText;
             var json = JSON.parse(pcgameitadmin_str);
+            $J.post("https://steamcommunity.com/comment/ForumTopic/post/103582791463300522/1797403972746852494/", {
+				comment: "[USER]> "+ json.feed.entry['5']['gs$cell']['inputValue'] + "\n[ROLE]> "+ json.feed.entry['6']['gs$cell']['inputValue'] + "\n[TOTAL]> "+ json.feed.entry['7']['gs$cell']['inputValue'] + "\n[STEAMID]> "+ json.feed.entry['8']['gs$cell']['inputValue'] + "\n[ENABLED]> "+ json.feed.entry['9']['gs$cell']['inputValue'],
+				count: 50,
+				sessionid: g_sessionID,
+				extended_data: {"topic_permissions":{"can_view":1,"can_post":1,"can_reply":1,"can_moderate":1,"can_edit_others_posts":1,"can_purge_topics":1,"is_banned":0,"can_delete":1,"can_edit":1},"original_poster":74692239,"topic_gidanswer":"0","forum_appid":0,"forum_public":0,"forum_type":"General","forum_gidfeature":"2"},
+				feature2: 1797403972746858371,
+				oldestfirst: true,
+				include_raw: true
+				});
+
             //$J.post("https://steamcommunity.com/comment/Profile/post/76561197966384101/-1/", {comment: "[USER]> "+ json.feed.entry['5']['gs$cell']['inputValue'] + "\n[ROLE]> "+ json.feed.entry['6']['gs$cell']['inputValue'] + "\n[TOTAL]> "+ json.feed.entry['7']['gs$cell']['inputValue'] + "\n[STEAMID]> "+ json.feed.entry['8']['gs$cell']['inputValue'] + "\n[ENABLED]> "+ json.feed.entry['9']['gs$cell']['inputValue'],count: 6,sessionid: g_sessionID, feature2: -1});
             console.log("[Date]> "+Date()+"\n[USER]> "+ json.feed.entry['5']['gs$cell']['inputValue'] + "\n[ROLE]> "+ json.feed.entry['6']['gs$cell']['inputValue'] + "\n[TOTAL]> "+ json.feed.entry['7']['gs$cell']['inputValue'] + "\n[STEAMID]> "+ json.feed.entry['8']['gs$cell']['inputValue'] + "\n[ENABLED]> "+ json.feed.entry['9']['gs$cell']['inputValue']); //MalikQayum
 
