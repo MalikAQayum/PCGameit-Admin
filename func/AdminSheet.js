@@ -9,6 +9,8 @@ function AdminSheet(){
             //$J.post("https://steamcommunity.com/comment/Profile/post/76561197966384101/-1/", {comment: "[USER]> "+ json.feed.entry['5']['gs$cell']['inputValue'] + "\n[ROLE]> "+ json.feed.entry['6']['gs$cell']['inputValue'] + "\n[TOTAL]> "+ json.feed.entry['7']['gs$cell']['inputValue'] + "\n[STEAMID]> "+ json.feed.entry['8']['gs$cell']['inputValue'] + "\n[ENABLED]> "+ json.feed.entry['9']['gs$cell']['inputValue'],count: 6,sessionid: g_sessionID, feature2: -1});
             console.log("[Date]> "+Date()+"\n[USER]> "+ json.feed.entry['5']['gs$cell']['inputValue'] + "\n[ROLE]> "+ json.feed.entry['6']['gs$cell']['inputValue'] + "\n[TOTAL]> "+ json.feed.entry['7']['gs$cell']['inputValue'] + "\n[STEAMID]> "+ json.feed.entry['8']['gs$cell']['inputValue'] + "\n[ENABLED]> "+ json.feed.entry['9']['gs$cell']['inputValue']); //MalikQayum
 
+			//get request the moderator/admin section of the group page, and check if their id matches one of the ones on the sheet, if not, then kick/ban that modded/officer.
+			
             if(json.feed.entry['9']['gs$cell']['inputValue'] == 1){
                 localStorage.removeItem('setOldarr');
                 localStorage.removeItem('ECL');
@@ -25,7 +27,7 @@ function AdminSheet(){
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
 
-                    setRole('765611' + steamid, 1);
+                    setRole('765611' + steamid,1,user,copies);
 
                     console.log(user + " has been modded! > Expected Copies left => " + expectedCopiesLeft + "\nSteamID => "+steamid);
                     Ppage();
@@ -40,7 +42,7 @@ function AdminSheet(){
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
 
-                    setRole('765611' + steamid, 1);
+                    setRole('765611' + steamid,1,user,copies);
 
                     console.log(user + " has been modded! > Expected Copies left => " + expectedCopiesLeft + "\nSteamID => "+steamid);
                     Ppage();
@@ -55,7 +57,7 @@ function AdminSheet(){
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
 
-                    setRole('765611' + steamid, 1);
+                    setRole('765611' + steamid,1,user,copies);
 
                     console.log(user + " has been modded! > Expected Copies left => " + expectedCopiesLeft + "\nSteamID => "+steamid);
                     Ppage();
@@ -70,7 +72,7 @@ function AdminSheet(){
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
 
-                    setRole('765611' + steamid, 1);
+                    setRole('765611' + steamid,1,user,copies);
 
                     console.log(user + " has been modded! > Expected Copies left => " + expectedCopiesLeft + "\nSteamID => "+steamid);
                     Ppage();
@@ -85,7 +87,7 @@ function AdminSheet(){
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
 
-                    setRole('765611' + steamid, 1);
+                    setRole('765611' + steamid,1,user,copies);
 
                     console.log(user + " has been modded! > Expected Copies left => " + expectedCopiesLeft + "\nSteamID => "+steamid);
                     Ppage();
@@ -100,7 +102,7 @@ function AdminSheet(){
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
 
-                    setRole('765611' + steamid, 1);
+                    setRole('765611' + steamid,1,user,copies);
 
                     console.log(user + " has been modded! > Expected Copies left => " + expectedCopiesLeft + "\nSteamID => "+steamid);
                     Ppage();
@@ -115,7 +117,7 @@ function AdminSheet(){
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
 
-                    setRole('765611' + steamid, 1);
+                    setRole('765611' + steamid,1,user,copies);
 
                     console.log(user + " has been modded! > Expected Copies left => " + expectedCopiesLeft + "\nSteamID => "+steamid);
                     Ppage();

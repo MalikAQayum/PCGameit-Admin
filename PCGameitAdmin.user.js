@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         PCGameit Admin Script
 // @namespace    https://github.com/MalikAQayum
-// @version      0.4
+// @version      0.5
 // @description  Steam Curator Admin Management Userscript, which will allow other officers/moderators, to use owner abilities through the owner steam account. 
 // @author       MalikQayum
 // @connect      api.steampowered.com
