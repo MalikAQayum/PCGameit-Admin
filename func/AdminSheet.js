@@ -26,6 +26,8 @@ function AdminSheet(){
 
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
+					localStorage.setItem('copies',copies);
+					localStorage.setItem('user',user);
 
                     setRole('765611' + steamid,1,user,copies);
 
@@ -41,6 +43,8 @@ function AdminSheet(){
 
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
+					localStorage.setItem('copies',copies);
+					localStorage.setItem('user',user);
 
                     setRole('765611' + steamid,1,user,copies);
 
@@ -56,6 +60,8 @@ function AdminSheet(){
 
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
+					localStorage.setItem('copies',copies);
+					localStorage.setItem('user',user);
 
                     setRole('765611' + steamid,1,user,copies);
 
@@ -71,6 +77,8 @@ function AdminSheet(){
 
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
+					localStorage.setItem('copies',copies);
+					localStorage.setItem('user',user);
 
                     setRole('765611' + steamid,1,user,copies);
 
@@ -86,6 +94,8 @@ function AdminSheet(){
 
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
+					localStorage.setItem('copies',copies);
+					localStorage.setItem('user',user);
 
                     setRole('765611' + steamid,1,user,copies);
 
@@ -101,6 +111,8 @@ function AdminSheet(){
 
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
+					localStorage.setItem('copies',copies);
+					localStorage.setItem('user',user);
 
                     setRole('765611' + steamid,1,user,copies);
 
@@ -116,6 +128,8 @@ function AdminSheet(){
 
                     localStorage.setItem('ECL',expectedCopiesLeft);
                     localStorage.setItem('S64ID',steamid);
+					localStorage.setItem('copies',copies);
+					localStorage.setItem('user',user);
 
                     setRole('765611' + steamid,1,user,copies);
 

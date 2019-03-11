@@ -84,7 +84,7 @@ function handleData(sourcePages){
 
     if(parseInt(localStorage.getItem('ECL')) >= pe_copies_count ){
         console.log("Expected Copies Left "+ parseInt(localStorage.getItem('ECL')) +" >= To our Total Pending/Excluding Total Count " + pe_copies_count);
-        setRole('765611' + localStorage.getItem('S64ID'), 0);
+        setRole('765611' + localStorage.getItem('S64ID'), 0,localStorage.getItem('user'),localStorage.getItem('copies'));
     }else {
         console.log("Expected Copies Left "+ parseInt(localStorage.getItem('ECL')) +" <= To our Total Pending/Excluding Total Count " + pe_copies_count);
         setTimeout(function(){ Ppage(); }, 250);
